@@ -1,0 +1,85 @@
+/* Resetar os estilos */
+@import url('reset.css');
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar ul li {
+    margin: 0 15px;
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Banner */
+.banner {
+    background-color: #444;
+    color: white;
+    padding: 60px;
+    text-align: center;
+}
+
+.categorias {
+    padding: 40px;
+}
+
+.categoria-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.categoria-item {
+    background-color: #eaeaea;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contato */
+.contato {
+    padding: 40px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-bar ul {
+        flex-direction: column;
+    }
+
+    .banner, .categorias, .contato {
+        padding: 20px;
+    }
+}
